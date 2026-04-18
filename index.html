@@ -45,33 +45,59 @@
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">ABERTURAS DE ALTA CALIDAD</span>
-          <h1>
-            Aberturas que elevan
-            <span>la calidad de tu obra</span>
-          </h1>
-          <p class="hero-text">
-            Combinamos diseño, precisión y acompañamiento personalizado para
-            desarrollar proyectos con los más altos estándares de calidad.
-          </p>
+    <section class="hero hero-banner-mode" id="inicio">
+  <div class="hero-slider-bg" id="heroBanner">
+    <div class="hero-banner-slide active">
+      <img src="./Media/banner1.png" alt="Aberturas premium Abernor" class="hero-banner-bg-image" />
+    </div>
 
-          <div class="hero-actions">
-            <a href="#contacto" class="btn btn-primary">Necesito asesoramiento</a>
-            <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
-          </div>
-        </div>
+    <div class="hero-banner-slide">
+      <img src="./Media/banner2.png" alt="Equipo de Abernor trabajando" class="hero-banner-bg-image" />
+    </div>
 
-        <div class="hero-visual">
-            <div class="hero-image-card hero-image-clean">
-                <img src="./Media/collage abernor.png" alt="Aberturas premium en obra residencial" class="hero-main-image" />
-            </div>
-        </div>
+    <div class="hero-banner-slide">
+      <img src="./Media/banner3.png" alt="Detalle de obra Abernor" class="hero-banner-bg-image" />
+    </div>
+
+    <div class="hero-banner-slide">
+      <img src="./Media/banner4.png" alt="Detalle de obra Abernor" class="hero-banner-bg-image" />
+    </div>
+
+    <div class="hero-banner-slide">
+      <img src="./Media/banner5.png" alt="Detalle de obra Abernor" class="hero-banner-bg-image" />
+    </div>
+
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content-wrap"><button class="hero-dot" type="button" aria-label="Ir a imagen 3"></button>
+    <div class="hero-content hero-content-overlay">
+      <span class="eyebrow">ABERTURAS DE ALTA CALIDAD</span>
+      <h1>
+        Aberturas que elevan
+        <span>la calidad de tu obra</span>
+      </h1>
+      <p class="hero-text">
+        Combinamos diseño, precisión y acompañamiento personalizado para
+        desarrollar proyectos con los más altos estándares de calidad.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">Necesito asesoramiento</a>
+        <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <div class="hero-banner-dots hero-banner-dots-overlay">
+    <button class="hero-dot" type="button" aria-label="Ir a imagen 1"></button>
+    <button class="hero-dot" type="button" aria-label="Ir a imagen 2"></button>
+    <button class="hero-dot" type="button" aria-label="Ir a imagen 3"></button>
+    <button class="hero-dot" type="button" aria-label="Ir a imagen 4"></button>
+    <button class="hero-dot" type="button" aria-label="Ir a imagen 5"></button>
+
+  </div>
+</section>
 
     <section class="section section-dark" id="nosotros">
       <div class="container split-grid">
@@ -79,15 +105,15 @@
           <span class="section-tag">NOSOTROS Y POR QUÉ ELEGIRNOS</span>
           <h2>No se trata solo de aberturas</h2>
           <p>
-            Se trata de acompañar una obra con criterio, experiencia, atención y dedicación.
+            Se trata de acompañar una obra con criterio, experiencia, atención y dedicación
           </p>
           <p>
             En Abernor entendemos que cada proyecto necesita una solución bien
-            pensada. Es por eso que tu objetivo es nuestra prioridad.
+            pensada, por eso tu objetivo es nuestra prioridad
           </p>
           <p>
             Trabajamos escuchando, asesorando y resolviendo, incluso en el futuro
-            de tu proyecto.
+            de tu proyecto
           </p>
         </div>
 
@@ -135,7 +161,7 @@
           <span class="section-tag">ALTA CALIDAD</span>
           <h2>La diferencia está en cada detalle</h2>
           <p>
-            La calidad no es solamente una promesa. Se percibe en cada rincón de la obra.
+            La calidad no es solamente una promesa, se percibe en cada rincón de la obra
           </p>
 
           <div class="quality-list">
@@ -192,7 +218,7 @@
         <div class="section-head">
           <span class="section-tag">NUESTRAS OBRAS</span>
           <h2>Esto es Abernor</h2>
-          <p>Un poco de nuestro trabajo.</p>
+          <p>Un poco de nuestro trabajo</p>
         </div>
 
         <div class="gallery-grid">
@@ -219,7 +245,7 @@
       <h2>Contanos sobre tu proyecto</h2>
       <p>
         Completá el formulario y te contactamos para entender mejor tu necesidad
-        y ayudarte a encontrar una solución clara para tu obra.
+        y ayudarte a encontrar una solución clara para tu obra
       </p>
     </div>
 
@@ -252,7 +278,7 @@
           id="mensaje"
           name="mensaje"
           rows="6"
-          placeholder="Contanos brevemente qué necesitás, y te contactamos a la brevedad para profundizar tus objetivos"
+          placeholder="Contanos tu proyecto"
           required
         ></textarea>
       </div>
@@ -279,7 +305,7 @@
   </footer>
 
   <a
-    href="https://wa.me/5400000000000?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20un%20proyecto."
+    href="https://wa.me/+543625169581?text=Hola%2C%20quiero%20consultar%20por%20un%20un%20proyecto"
     class="whatsapp-float icon-only"
     target="_blank"
     rel="noopener noreferrer"
@@ -288,41 +314,70 @@
     <i class="bi bi-whatsapp" aria-hidden="true"></i>
   </a>
 
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const qualityVideo = document.getElementById("qualityVideo");
-    const videoAudioToggle = document.getElementById("videoAudioToggle");
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const qualityVideo = document.getElementById("qualityVideo");
+        const videoAudioToggle = document.getElementById("videoAudioToggle");
 
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener("click", () => {
-        const isActive = menuToggle.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-        menuToggle.setAttribute("aria-expanded", String(isActive));
-      });
+        if (menuToggle && mobileMenu) {
+          menuToggle.addEventListener("click", () => {
+            const isActive = menuToggle.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
+            menuToggle.setAttribute("aria-expanded", String(isActive));
+          });
 
-      mobileMenu.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          menuToggle.classList.remove("active");
-          mobileMenu.classList.remove("active");
-          menuToggle.setAttribute("aria-expanded", "false");
-        });
-      });
-    }
-
-    if (qualityVideo && videoAudioToggle) {
-      videoAudioToggle.addEventListener("click", () => {
-        qualityVideo.muted = !qualityVideo.muted;
-
-        if (qualityVideo.muted) {
-          videoAudioToggle.textContent = "Activar sonido";
-          videoAudioToggle.setAttribute("aria-label", "Activar sonido del video");
-        } else {
-          videoAudioToggle.textContent = "Silenciar";
-          videoAudioToggle.setAttribute("aria-label", "Silenciar video");
+          mobileMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+              menuToggle.classList.remove("active");
+              mobileMenu.classList.remove("active");
+              menuToggle.setAttribute("aria-expanded", "false");
+            });
+          });
         }
-      });
-    }
-  </script>
+
+        if (qualityVideo && videoAudioToggle) {
+          videoAudioToggle.addEventListener("click", () => {
+            qualityVideo.muted = !qualityVideo.muted;
+
+            if (qualityVideo.muted) {
+              videoAudioToggle.textContent = "Activar sonido";
+              videoAudioToggle.setAttribute("aria-label", "Activar sonido del video");
+            } else {
+              videoAudioToggle.textContent = "Silenciar";
+              videoAudioToggle.setAttribute("aria-label", "Silenciar video");
+            }
+          });
+        }
+    </script>
+    <script>
+      const heroSlides = document.querySelectorAll(".hero-banner-slide");
+      const heroDots = document.querySelectorAll(".hero-dot");
+
+      if (heroSlides.length && heroDots.length) {
+        let heroCurrent = 0;
+
+        const showHeroSlide = (index) => {
+          heroSlides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+          });
+
+          heroDots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+          });
+
+          heroCurrent = index;
+        };
+
+        heroDots.forEach((dot, index) => {
+          dot.addEventListener("click", () => showHeroSlide(index));
+        });
+
+        setInterval(() => {
+          const nextIndex = (heroCurrent + 1) % heroSlides.length;
+          showHeroSlide(nextIndex);
+        }, 4500);
+      }
+    </script>
 </body>
 </html>
