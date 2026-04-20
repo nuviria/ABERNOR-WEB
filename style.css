@@ -233,6 +233,13 @@ button {
   pointer-events: auto;
 }
 
+.hero-banner-slide picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-banner-slide picture img,
 .hero-banner-bg-image {
   width: 100%;
   height: 100%;
@@ -947,25 +954,6 @@ button {
     object-position: center center;
   }
 
-  .hero-slider-bg .hero-banner-slide:nth-child(1) .hero-banner-bg-image {
-    object-position: 68% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(2) .hero-banner-bg-image {
-    object-position: 58% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(3) .hero-banner-bg-image {
-    object-position: 62% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(4) .hero-banner-bg-image {
-    object-position: 72% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(5) .hero-banner-bg-image {
-    object-position: 64% center;
-  }
 
   .hero-overlay {
     background:
@@ -1165,27 +1153,7 @@ button {
   .hero-banner-bg-image {
     object-position: center center;
   }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(1) .hero-banner-bg-image {
-    object-position: 72% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(2) .hero-banner-bg-image {
-    object-position: 60% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(3) .hero-banner-bg-image {
-    object-position: 66% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(4) .hero-banner-bg-image {
-    object-position: 76% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(5) .hero-banner-bg-image {
-    object-position: 68% center;
-  }
-
+  
   .hero-overlay {
     background:
       linear-gradient(180deg, rgba(11, 11, 11, 0.46) 0%, rgba(11, 11, 11, 0.28) 38%, rgba(11, 11, 11, 0.52) 100%);
@@ -1290,26 +1258,6 @@ button {
   .hero-banner-track,
   .hero-banner-bg-image {
     min-height: 420px;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(1) .hero-banner-bg-image {
-    object-position: 74% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(2) .hero-banner-bg-image {
-    object-position: 62% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(3) .hero-banner-bg-image {
-    object-position: 68% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(4) .hero-banner-bg-image {
-    object-position: 78% center;
-  }
-
-  .hero-slider-bg .hero-banner-slide:nth-child(5) .hero-banner-bg-image {
-    object-position: 70% center;
   }
 
   .quality-video-wrap {
