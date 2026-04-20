@@ -410,50 +410,52 @@
         showHeroSlide(nextIndex);
       }, 4500);
     }
+const galleryCards = document.querySelectorAll(".gallery-card");
+const galleryModal = document.getElementById("galleryModal");
+const galleryModalImage = document.getElementById("galleryModalImage");
+const galleryModalClose = document.getElementById("galleryModalClose");
+const galleryModalBackdrop = document.getElementById("galleryModalBackdrop");
 
-    const galleryCards = document.querySelectorAll(".gallery-card");
-    const galleryModal = document.getElementById("galleryModal");
-    const galleryModalImage = document.getElementById("galleryModalImage");
-    const galleryModalClose = document.getElementById("galleryModalClose");
-    const galleryModalBackdrop = document.getElementById("galleryModalBackdrop");
+if (galleryCards.length && galleryModal && galleryModalImage) {
+  const openGalleryModal = (src, alt) => {
+    galleryModalImage.src = src;
+    galleryModalImage.alt = alt || "Imagen ampliada";
+    galleryModal.classList.add("active");
+    galleryModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
 
-    const openGalleryModal = (src, alt) => {
-      galleryModalImage.src = src;
-      galleryModalImage.alt = alt;
-      galleryModal.classList.add("active");
-      galleryModal.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    };
+  const closeGalleryModal = () => {
+    galleryModal.classList.remove("active");
+    galleryModal.setAttribute("aria-hidden", "true");
+    galleryModalImage.src = "";
+    galleryModalImage.alt = "";
+    document.body.style.overflow = "";
+  };
 
-    const closeGalleryModal = () => {
-      galleryModal.classList.remove("active");
-      galleryModal.setAttribute("aria-hidden", "true");
-      galleryModalImage.src = "";
-      galleryModalImage.alt = "";
-      document.body.style.overflow = "";
-    };
-
-    galleryCards.forEach((card) => {
-      card.addEventListener("click", () => {
-        const img = card.querySelector("img");
-        const full = card.getAttribute("data-full") || img.src;
-        openGalleryModal(full, img.alt);
-      });
+  galleryCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const img = card.querySelector("img");
+      if (!img) return;
+      openGalleryModal(img.src, img.alt);
     });
+  });
 
-    if (galleryModalClose) {
-      galleryModalClose.addEventListener("click", closeGalleryModal);
+  if (galleryModalClose) {
+    galleryModalClose.addEventListener("click", closeGalleryModal);
+  }
+
+  if (galleryModalBackdrop) {
+    galleryModalBackdrop.addEventListener("click", closeGalleryModal);
+  }
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && galleryModal.classList.contains("active")) {
+      closeGalleryModal();
     }
+  });
+}
 
-    if (galleryModalBackdrop) {
-      galleryModalBackdrop.addEventListener("click", closeGalleryModal);
-    }
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && galleryModal.classList.contains("active")) {
-        closeGalleryModal();
-      }
-    });
   </script>
 </body>
 </html>
