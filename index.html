@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- =========================
+       META / SEO
+  ========================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abernor | Aberturas de calidad premium</title>
+
+  <title>Abernor | Aberturas de alta prestación que definen tu arquitectura</title>
   <meta
     name="description"
-    content="Aberturas de aluminio con calidad premium, atención personalizada y acompañamiento continuo durante y después de la obra. Abernor."
+    content="Carpintería de aluminio de alta prestación. Elevamos el estándar de confort y diseño en cada obra."
   />
+
+  <!-- =========================
+       FUENTES / ICONOS / CSS
+  ========================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -20,11 +28,15 @@
   />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- =========================
+       HEADER
+  ========================== -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="Ir al inicio">
-        <img src="./Media/Abernor Rectangulo.png" alt="Abernor" class="brand-logo" />
+        <img src="./Media/Logos/Abernor Rectangulo.png" alt="Abernor" class="brand-logo" />
       </a>
 
       <button
@@ -44,118 +56,179 @@
     <nav class="mobile-menu" id="mobileMenu" aria-label="Menú principal">
       <a href="#inicio">Inicio</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#calidad">Calidad</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#alta-prestacion">Alta prestación</a>
       <a href="#proceso">Proceso</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#alcance">Alcance</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
-  <section class="hero hero-banner-mode" id="inicio">
-    <div class="hero-slider-bg" id="heroBanner">
-      <div class="hero-banner-slide active">
-        <picture>
-          <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner1-mobile.png" />
-          <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner1-tablet.png" />
-          <img src="./Media/Banner/banner1.png" alt="Aberturas premium Abernor" class="hero-banner-bg-image" />
-        </picture>
+    <!-- =========================
+         HERO / BANNER
+    ========================== -->
+    <section class="hero hero-banner-mode" id="inicio">
+      <div class="hero-slider-bg" id="heroBanner">
+        <div class="hero-banner-slide active">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner1-mobile.png" />
+            <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner1-tablet.png" />
+            <img src="./Media/Banner/banner1.png" alt="Aberturas premium Abernor" class="hero-banner-bg-image" />
+          </picture>
+        </div>
+
+        <div class="hero-banner-slide">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner5-mobile.png" />
+            <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner5-tablet.png" />
+            <img src="./Media/Banner/banner5.png" alt="Equipo de Abernor trabajando" class="hero-banner-bg-image" />
+          </picture>
+        </div>
+
+        <div class="hero-banner-slide">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner4-mobile.png" />
+            <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner4-tablet.png" />
+            <img src="./Media/Banner/banner4.png" alt="Detalle de obra Abernor" class="hero-banner-bg-image" />
+          </picture>
+        </div>
+
+        <div class="hero-banner-slide">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner3-mobile.png" />
+            <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner3-tablet.png" />
+            <img src="./Media/Banner/banner3.png" alt="Proyecto Abernor" class="hero-banner-bg-image" />
+          </picture>
+        </div>
+
+        <div class="hero-banner-slide">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner2-mobile.png" />
+            <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner2-tablet.png" />
+            <img src="./Media/Banner/banner2.png" alt="Obra Abernor" class="hero-banner-bg-image" />
+          </picture>
+        </div>
+
+        <div class="hero-overlay"></div>
       </div>
-  
-      <div class="hero-banner-slide">
-        <picture>
-          <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner5-mobile.png" />
-          <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner5-tablet.png" />
-          <img src="./Media/Banner/banner5.png" alt="Equipo de Abernor trabajando" class="hero-banner-bg-image" />
-        </picture>
-      </div>
-  
-      <div class="hero-banner-slide">
-        <picture>
-          <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner4-mobile.png" />
-          <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner4-tablet.png" />
-          <img src="./Media/Banner/banner4.png" alt="Detalle de obra Abernor" class="hero-banner-bg-image" />
-        </picture>
-      </div>
-  
-      <div class="hero-banner-slide">
-        <picture>
-          <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner3-mobile.png" />
-          <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner3-tablet.png" />
-          <img src="./Media/Banner/banner3.png" alt="Proyecto Abernor" class="hero-banner-bg-image" />
-        </picture>
-      </div>
-  
-      <div class="hero-banner-slide">
-        <picture>
-          <source media="(max-width: 640px)" srcset="./Media/Banner/mobile/banner2-mobile.png" />
-          <source media="(max-width: 1024px)" srcset="./Media/Banner/tablet/banner2-tablet.png" />
-          <img src="./Media/Banner/banner2.png" alt="Obra Abernor" class="hero-banner-bg-image" />
-        </picture>
-      </div>
-  
-      <div class="hero-overlay"></div>
-    </div>
-  
-    <div class="container hero-content-wrap">
-      <div class="hero-content hero-content-overlay">
-        <span class="eyebrow">ABERTURAS DE ALTA CALIDAD</span>
-        <h1>
-          Aberturas que elevan
-          <span>la calidad de tu obra</span>
-        </h1>
-        <p class="hero-text">
-          Combinamos diseño, precisión y acompañamiento personalizado para
-          desarrollar proyectos con los más altos estándares de calidad
-        </p>
-  
-        <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Necesito asesoramiento</a>
-          <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
+
+      <div class="container hero-content-wrap">
+        <div class="hero-content hero-content-overlay">
+          <span class="eyebrow">ABERTURAS DE ALTA CALIDAD</span>
+
+          <h1>
+            Aberturas que elevan
+            <span>la calidad de tu obra</span>
+          </h1>
+
+          <p class="hero-text">
+            Combinamos diseño, precisión y acompañamiento personalizado para
+            desarrollar proyectos con los más altos estándares de calidad
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Necesito asesoramiento</a>
+            <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
+          </div>
         </div>
       </div>
-    </div>
-  
-    <div class="hero-banner-dots hero-banner-dots-overlay">
-      <button class="hero-dot active" type="button" aria-label="Ir a imagen 1"></button>
-      <button class="hero-dot" type="button" aria-label="Ir a imagen 2"></button>
-      <button class="hero-dot" type="button" aria-label="Ir a imagen 3"></button>
-      <button class="hero-dot" type="button" aria-label="Ir a imagen 4"></button>
-      <button class="hero-dot" type="button" aria-label="Ir a imagen 5"></button>
-    </div>
-  </section>
 
+      <div class="hero-banner-dots hero-banner-dots-overlay">
+        <button class="hero-dot active" type="button" aria-label="Ir a imagen 1"></button>
+        <button class="hero-dot" type="button" aria-label="Ir a imagen 2"></button>
+        <button class="hero-dot" type="button" aria-label="Ir a imagen 3"></button>
+        <button class="hero-dot" type="button" aria-label="Ir a imagen 4"></button>
+        <button class="hero-dot" type="button" aria-label="Ir a imagen 5"></button>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
     <section class="section section-dark" id="nosotros">
-      <div class="container split-grid">
-        <div class="section-copy">
-          <span class="section-tag">NOSOTROS Y POR QUÉ ELEGIRNOS</span>
-          <h2>No se trata solo de aberturas</h2>
+      <div class="container split-grid about-grid">
+        <div class="section-copy about-copy">
+          <span class="section-tag">NOSOTROS</span>
+          <h2>Tu socio estratégico en obra</h2>
+
           <p>
-            Se trata de acompañar una obra con criterio, experiencia, atención y dedicación
+            En Abernor no solo fabricamos: Resolvemos
           </p>
           <p>
-            En Abernor entendemos que cada proyecto necesita una solución bien
-            pensada, por eso tu objetivo es nuestra prioridad
+            Trabajamos junto a
+            estudios de arquitectura, desarrolladores y particulares que buscan soluciones funcionales, estéticas y duraderas.
           </p>
+          </p>
+
           <p>
-            Trabajamos escuchando, asesorando y resolviendo, incluso en el futuro
-            de tu proyecto
+            Nuestra experiencia asegura que cada abertura funcione con precisión
+            desde el primer día
           </p>
+
+          <div class="about-hook">
+            <strong>La diferencia esta en cada detalle</strong>
+          </div>
         </div>
 
-        <div class="section-visual">
-          <div class="nosotros-collage">
+        <div class="section-visual about-visual">
+          <div class="about-image-wrap">
             <img
               src="./Media/equipo.png"
-              alt="Equipo de Abernor trabajando"
-              class="section-image"
+              alt="Equipo Abernor trabajando en desarrollo de obra"
+              class="section-image about-image"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section quality-section" id="calidad">
+
+    <!-- =========================
+         ESPECIALIDADES
+    ========================== -->
+    <section class="section section-dark" id="especialidades">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">ESPECIALIDADES</span>
+          <h2>Soluciones en aluminio para cada uno de tus proyectos</h2>
+          <p>
+            Estudiamos, ideamos y personalizamos cada detalle para que tu obra funcione como lo planificaste
+          </p>
+        </div>
+
+        <div class="process-grid specialties-grid">
+          <article class="process-card specialty-card">
+            <h3>Residencial Premium</h3>
+            <p>
+              Aberturas de diseño que fusionan hermeticidad, seguridad y estética
+            </p>
+          </article>
+
+          <article class="process-card specialty-card">
+            <h3>Ingeniería de Fachadas</h3>
+            <p>
+              Fachadas integrales y muros cortina para desarrollos comerciales y corporativos de gran escala
+            </p>
+          </article>
+
+          <article class="process-card specialty-card">
+            <h3>Sistemas a Medida</h3>
+            <p>
+              Soluciones técnicas específicas y carpintería de interiores para proyectos únicos
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ALTA PRESTACIÓN
+    ========================== -->
+    <section class="section quality-section" id="alta-prestacion">
       <div class="container quality-grid">
         <div class="quality-visuals">
           <div class="quality-video-wrap">
@@ -168,7 +241,7 @@
               playsinline
               preload="auto"
             >
-              <source src="./Media/produccion.mp4" type="video/mp4" />
+              <source src="./Media/Videos/produccion.mp4" type="video/mp4" />
               Tu navegador no soporta video HTML5.
             </video>
 
@@ -184,112 +257,189 @@
         </div>
 
         <div class="section-copy">
-          <span class="section-tag">ALTA CALIDAD</span>
-          <h2>La diferencia está en cada detalle</h2>
+          <span class="section-tag">ALTA PRESTACIÓN</span>
+          <h2>Carpintería de aluminio de alta prestación</h2>
+
           <p>
-            La calidad no es solamente una promesa, se percibe en cada rincón de la obra
+            Utilizamos componentes normalizados (Aluar, Hydro, VASA) para garantizar eficiencia térmica y acústica superior
           </p>
 
-          <div class="quality-list">
-            <div class="quality-item">
-              <strong>Terminaciones cuidadas</strong>
-              <span>Estética sólida, limpia y de calidad</span>
+          <div class="quality-highlight-grid">
+            <div class="quality-highlight-card">
+              <h3>Componentes certificados</h3>
+              <p>Perfiles, herrajes y sistemas seleccionados para obras que exigen desempeño real</p>
             </div>
 
-            <div class="quality-item">
-              <strong>Visión integral</strong>
-              <span>Vemos el panorama completo</span>
-            </div>
-
-            <div class="quality-item">
-              <strong>Presencia y criterio</strong>
-              <span>Resolución clara y profesional</span>
-            </div>
-
-            <div class="quality-item">
-              <strong>Atención personalizada</strong>
-              <span>Seguimiento cercano antes, durante y después de la obra</span>
+            <div class="quality-highlight-card">
+              <h3>Eficiencia</h3>
+              <p>Más control, mejor funcionamiento y soluciones pensadas para acompañar el uso diario</p>
             </div>
           </div>
+
+          <div class="provider-logos">
+            <div class="provider-logo-box">
+              <img src="./Media/Logos/aluar.png" alt="Logo Aluar" class="provider-logo-image" loading="lazy" />
+            </div>
+
+            <div class="provider-logo-box">
+              <img src="./Media/Logos/hydro.png" alt="Logo Hydro" class="provider-logo-image" loading="lazy" />
+            </div>
+
+            <div class="provider-logo-box">
+              <img src="./Media/Logos/vasa.png" alt="Logo VASA" class="provider-logo-image" loading="lazy" />
+            </div>
+
+            <div class="provider-logo-box">
+              <img src="./Media/Logos/proveedor-4.png" alt="Logo proveedor" class="provider-logo-image" loading="lazy" />
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- =========================
+         PROCESO
+    ========================== -->
     <section class="section section-dark" id="proceso">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">PROCESO</span>
-          <h2>Una forma de trabajo clara y cercana</h2>
+          <h2>Una forma de trabajo clara y eficaz</h2>
         </div>
+        <p>
+            Nuestra forma de trabajo se divide en 4 etapas generales
+        </p>
 
         <div class="process-grid">
           <article class="process-card">
-            <span class="process-step">Paso 1</span>
+            <span class="process-step">Etapa 1</span>
             <h3>Escuchamos tu proyecto</h3>
           </article>
 
           <article class="process-card">
-            <span class="process-step">Paso 2</span>
+            <span class="process-step">Etapa 2</span>
             <h3>Asesoramos con criterio</h3>
           </article>
 
           <article class="process-card">
-            <span class="process-step">Paso 3</span>
+            <span class="process-step">Etapa 3</span>
             <h3>Ejecutamos con detalle</h3>
           </article>
 
           <article class="process-card">
-            <span class="process-step">Paso 4</span>
+            <span class="process-step">Etapa 4</span>
             <h3>Seguimos acompañando</h3>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
     <section class="section" id="proyectos">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-tag">NUESTRAS OBRAS</span>
-      <h2>Esto es Abernor</h2>
-      <p>Un poco de nuestro trabajo</p>
-    </div>
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">PROYECTOS</span>
+          <h2>Esto es Abernor</h2>
+          <p>Algunas de nuestras obras, detalles y soluciones ejecutadas con el sello único de Abernor</p>
+        </div>
 
-    <div class="gallery-grid">
-      <button class="gallery-card" type="button" aria-label="Abrir imagen 1">
-        <img src="./Media/fachada.png" alt="Abertura instalada en obra" class="gallery-image" />
-      </button>
+        <div class="gallery-grid gallery-grid-12">
+          <button class="gallery-card gallery-card-large" type="button" aria-label="Abrir proyecto 1">
+            <img src="./Media/Obras/fachada.png" alt="Fachada integral en proyecto residencial" class="gallery-image" loading="lazy" />
+          </button>
 
-      <button class="gallery-card" type="button" aria-label="Abrir imagen 2">
-        <img src="./Media/ventanas.png" alt="Ventanas instaladas en proyecto" class="gallery-image" />
-      </button>
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 2">
+            <img src="./Media/Obras/ventanas.png" alt="Ventanales de aluminio de alta prestación" class="gallery-image" loading="lazy" />
+          </button>
 
-      <button class="gallery-card" type="button" aria-label="Abrir imagen 3">
-        <img src="./Media/terminacion.png" alt="Detalle de terminación" class="gallery-image" />
-      </button>
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 3">
+            <img src="./Media/Obras/puerta.png" alt="Detalle de terminación en carpintería de aluminio" class="gallery-image" loading="lazy" />
+          </button>
 
-      <button class="gallery-card" type="button" aria-label="Abrir imagen 4">
-        <img src="./Media/balcon.png" alt="Balcón con instalación de aberturas" class="gallery-image" />
-      </button>
+          <button class="gallery-card gallery-card-tall" type="button" aria-label="Abrir proyecto 4">
+            <img src="./Media/Obras/balcon.png" alt="Balcón con cerramiento de vidrio y aluminio" class="gallery-image" loading="lazy" />
+          </button>
 
-      <button class="gallery-card" type="button" aria-label="Abrir imagen 5">
-        <img src="./Media/puerta.png" alt="Puerta instalada en proyecto residencial" class="gallery-image" />
-      </button>
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 5">
+            <img src="./Media/Obras/terminacion.png" alt="Puerta de diseño instalada en obra" class="gallery-image" loading="lazy" />
+          </button>
 
-      <button class="gallery-card" type="button" aria-label="Abrir imagen 6">
-        <img src="./Media/esquina.png" alt="Esquina vidriada de proyecto" class="gallery-image" />
-      </button>
-    </div>
-  </div>
-</section>
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 6">
+            <img src="./Media/Obras/materiales1.png" alt="Esquina vidriada en proyecto arquitectónico" class="gallery-image" loading="lazy" />
+          </button>
 
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 7">
+            <img src="./Media/Obras/esquina.png" alt="Aberturas premium en fachada moderna" class="gallery-image" loading="lazy" />
+          </button>
+
+          <button class="gallery-card gallery-card-wide" type="button" aria-label="Abrir proyecto 8">
+            <img src="./Media/Obras/ventana2.png" alt="Frente integral con grandes paños vidriados" class="gallery-image" loading="lazy" />
+          </button>
+
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 9">
+            <img src="./Media/Obras/baño.png" alt="Detalle técnico y terminación de obra" class="gallery-image" loading="lazy" />
+          </button>
+
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 10">
+            <img src="./Media/Obras/ventanal.png" alt="Interior con cerramiento a medida" class="gallery-image" loading="lazy" />
+          </button>
+
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 11">
+            <img src="./Media/Obras/casa.png" alt="Aberturas de aluminio en obra terminada" class="gallery-image" loading="lazy" />
+          </button>
+
+          <button class="gallery-card" type="button" aria-label="Abrir proyecto 12">
+            <img src="./Media/Obras/ventanal2.png" alt="Proyecto con carpintería de aluminio y vidrio" class="gallery-image" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+ 
+    <!-- =========================
+         ALCANCE REGIONAL
+    ========================== -->
+    <section class="section section-dark regional-section" id="alcance">
+      <div class="container regional-grid regional-grid-image">
+        <div class="regional-visual">
+          <div class="regional-image-wrap">
+            <img
+              src="./Media/alcance-nea.png"
+              alt="Mapa de alcance logístico de Abernor en el NEA"
+              class="regional-image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="section-copy regional-copy">
+          <span class="section-tag">ALCANCE</span>
+          <h2>Abernor es NEA</h2>
+          <p>
+            Llevamos el sello de Abernor a todo el NEA para hacer posible tu proyecto
+          </p>
+          <p>
+            Esto te permite trabajar con un equipo preparado para responder con
+            coordinación, previsibilidad y presencia en cada etapa clave
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
     <section class="cta-section" id="contacto">
       <div class="container cta-box cta-form-box">
         <div class="cta-copy">
           <span class="section-tag">CONTACTO</span>
           <h2>Contanos sobre tu proyecto</h2>
           <p>
-            Completá el formulario y te contactamos para entender mejor tu necesidad
-            y ayudarte a encontrar una solución clara para tu obra
+            Completá el formulario y te contactamos para personalizar una propuesta ideal para vos y tus objetivos
           </p>
         </div>
 
@@ -322,7 +472,7 @@
               id="mensaje"
               name="mensaje"
               rows="6"
-              placeholder="Contanos tu proyecto"
+              placeholder="Descripción"
               required
             ></textarea>
           </div>
@@ -335,11 +485,39 @@
     </section>
   </main>
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <img src="./Media/logo Abernor.png" alt="Logo de Abernor" class="footer-logo" />
+      <div class="footer-brand">
+        <img src="./Media/Logos/logo Abernor.png" alt="Logo de Abernor" class="footer-logo" />
       </div>
+
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/abernoraberturasnea/"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook de Abernor"
+        >
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+          <span>abernoraberturasnea</span>
+        </a>
+
+        <a
+          href="https://www.instagram.com/abernoraberturas/"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram de Abernor"
+        >
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+          <span>abernoraberturas</span>
+        </a>
+      </div>
+
       <div class="footer-text">
         <p>Abernor · Más que aberturas</p>
         <p>Ruta Nacional N°11, Km 1004 - Resistencia, Chaco</p>
@@ -347,8 +525,11 @@
     </div>
   </footer>
 
+  <!-- =========================
+       WHATSAPP FLOAT
+  ========================== -->
   <a
-    href="https://wa.me/+543625169581?text=Hola%2C%20quiero%20consultar%20por%20un%20un%20proyecto"
+    href="https://wa.me/+543625169581?text=Hola%2C%20quiero%20cotizar%20mi%20proyecto"
     class="whatsapp-float icon-only"
     target="_blank"
     rel="noopener noreferrer"
@@ -357,8 +538,12 @@
     <i class="bi bi-whatsapp" aria-hidden="true"></i>
   </a>
 
+  <!-- =========================
+       LIGHTBOX GALERÍA
+  ========================== -->
   <div class="gallery-modal" id="galleryModal" aria-hidden="true">
     <div class="gallery-modal-backdrop" id="galleryModalBackdrop"></div>
+
     <div class="gallery-modal-content" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
       <button class="gallery-modal-close" id="galleryModalClose" type="button" aria-label="Cerrar imagen">
         ×
@@ -367,12 +552,25 @@
     </div>
   </div>
 
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
   <script>
     const menuToggle = document.getElementById("menuToggle");
     const mobileMenu = document.getElementById("mobileMenu");
     const qualityVideo = document.getElementById("qualityVideo");
     const videoAudioToggle = document.getElementById("videoAudioToggle");
+    const heroSlides = document.querySelectorAll(".hero-banner-slide");
+    const heroDots = document.querySelectorAll(".hero-dot");
+    const galleryCards = document.querySelectorAll(".gallery-card");
+    const galleryModal = document.getElementById("galleryModal");
+    const galleryModalImage = document.getElementById("galleryModalImage");
+    const galleryModalClose = document.getElementById("galleryModalClose");
+    const galleryModalBackdrop = document.getElementById("galleryModalBackdrop");
 
+    /* =========================
+       MENÚ MOBILE
+    ========================== */
     if (menuToggle && mobileMenu) {
       menuToggle.addEventListener("click", () => {
         const isActive = menuToggle.classList.toggle("active");
@@ -389,6 +587,9 @@
       });
     }
 
+    /* =========================
+       VIDEO SONIDO
+    ========================== */
     if (qualityVideo && videoAudioToggle) {
       videoAudioToggle.addEventListener("click", () => {
         qualityVideo.muted = !qualityVideo.muted;
@@ -403,9 +604,9 @@
       });
     }
 
-    const heroSlides = document.querySelectorAll(".hero-banner-slide");
-    const heroDots = document.querySelectorAll(".hero-dot");
-
+    /* =========================
+       HERO SLIDER
+    ========================== */
     if (heroSlides.length && heroDots.length) {
       let heroCurrent = 0;
 
@@ -430,52 +631,49 @@
         showHeroSlide(nextIndex);
       }, 4500);
     }
-const galleryCards = document.querySelectorAll(".gallery-card");
-const galleryModal = document.getElementById("galleryModal");
-const galleryModalImage = document.getElementById("galleryModalImage");
-const galleryModalClose = document.getElementById("galleryModalClose");
-const galleryModalBackdrop = document.getElementById("galleryModalBackdrop");
 
-if (galleryCards.length && galleryModal && galleryModalImage) {
-  const openGalleryModal = (src, alt) => {
-    galleryModalImage.src = src;
-    galleryModalImage.alt = alt || "Imagen ampliada";
-    galleryModal.classList.add("active");
-    galleryModal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  };
+    /* =========================
+       LIGHTBOX GALERÍA
+    ========================== */
+    if (galleryCards.length && galleryModal && galleryModalImage) {
+      const openGalleryModal = (src, alt) => {
+        galleryModalImage.src = src;
+        galleryModalImage.alt = alt || "Imagen ampliada";
+        galleryModal.classList.add("active");
+        galleryModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      };
 
-  const closeGalleryModal = () => {
-    galleryModal.classList.remove("active");
-    galleryModal.setAttribute("aria-hidden", "true");
-    galleryModalImage.src = "";
-    galleryModalImage.alt = "";
-    document.body.style.overflow = "";
-  };
+      const closeGalleryModal = () => {
+        galleryModal.classList.remove("active");
+        galleryModal.setAttribute("aria-hidden", "true");
+        galleryModalImage.src = "";
+        galleryModalImage.alt = "";
+        document.body.style.overflow = "";
+      };
 
-  galleryCards.forEach((card) => {
-    card.addEventListener("click", () => {
-      const img = card.querySelector("img");
-      if (!img) return;
-      openGalleryModal(img.src, img.alt);
-    });
-  });
+      galleryCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const img = card.querySelector("img");
+          if (!img) return;
+          openGalleryModal(img.src, img.alt);
+        });
+      });
 
-  if (galleryModalClose) {
-    galleryModalClose.addEventListener("click", closeGalleryModal);
-  }
+      if (galleryModalClose) {
+        galleryModalClose.addEventListener("click", closeGalleryModal);
+      }
 
-  if (galleryModalBackdrop) {
-    galleryModalBackdrop.addEventListener("click", closeGalleryModal);
-  }
+      if (galleryModalBackdrop) {
+        galleryModalBackdrop.addEventListener("click", closeGalleryModal);
+      }
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && galleryModal.classList.contains("active")) {
-      closeGalleryModal();
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && galleryModal.classList.contains("active")) {
+          closeGalleryModal();
+        }
+      });
     }
-  });
-}
-
   </script>
 </body>
 </html>
