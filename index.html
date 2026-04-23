@@ -469,44 +469,55 @@
           </p>
         </div>
 
-        <form class="contact-form" id="contactForm" action="#" method="post">
-          <div class="form-group">
-            <label for="nombre">Nombre o empresa</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Tu nombre o el de tu empresa"
-              required
-            />
-          </div>
+        <form
+        class="contact-form"
+        id="contactForm"
+        action="https://formspree.io/f/mjgjjygy"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Nuevo Contacto - Landing Abernor" />
+      
+        <div class="form-group">
+          <label for="nombre">Nombre o empresa</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre o el de tu empresa"
+            required
+          />
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="correo@empresa.com"
+            required
+          />
+        </div>
+      
+        <div class="form-group">
+          <label for="mensaje">Descripción </label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="6"
+            placeholder="Contanos tu proyecto"
+            required
+          ></textarea>
+        </div>
+      
+        <button type="submit" class="btn btn-primary form-submit-btn">
+          Personalizá tu proyecto
 
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="correo@empresa.com"
-              required
-            />
-          </div>
+        </button>
+        <input type="hidden" name="_next" value="https://abernoraberturas/gracias.html" />
 
-          <div class="form-group">
-            <label for="mensaje">Analicemos tu proyecto</label>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              rows="6"
-              placeholder="Descripción"
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary form-submit-btn">
-            Personalizá tu proyecto
-          </button>
         </form>
+
       </div>
     </section>
   </main>
