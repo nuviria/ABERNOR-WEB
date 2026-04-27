@@ -232,8 +232,8 @@
       <div class="container quality-grid">
         <div class="quality-visuals">
           <div class="quality-video-wrap">
-            <video class="quality-video" id="qualityVideo" autoplay muted loop playsinline preload="auto" />
-              <source src="./Media/Videos/produccion.mp4" type="video/mp4" />
+            <video class="quality-video" id="qualityVideo" autoplay muted loop playsinline preload="auto" >
+              <source src="./Media/Videos/produccion.mp4" type="video/mp4" >
               Tu navegador no soporta video HTML5.
             </video>
 
@@ -640,6 +640,18 @@
         }
       });
     }
+
+    const video = document.getElementById('qualityVideo');
+
+    video.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    
+    // Opcional: Forzar el play si se queda en negro al cargar
+    video.play().catch(error => {
+        console.log("El autoplay fue bloqueado o el video falló al reiniciar");
+    });
 
     /* =========================
        HERO SLIDER
